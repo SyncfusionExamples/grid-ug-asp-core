@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Clip Mode";
+}
+<p>@ViewData["Title"]</p>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Rool No" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Name of the inventor" clipMode="Clip" width="80"></e-grid-column>
+        <e-grid-column field="Freight" headerText="No of patentfamilies" clipMode="Ellipsis" width="100"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Country" width="100"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Main fields of Invention" clipMode="EllipsisWithTooltip" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - layout_page</title>
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <ejs-sidebar id="sidebar-menu" width="290px" mediaQuery="(min-width:650px)">
+        <e-content-template>
+            <div class="sidebar-header header-cover" style="background-color: #1694CA">
+                <div style="text-align:center">
+                    <div class="sidebar-brand">
+                        ASP.NET Core Grid
+                    </div>
+                </div>
+            </div>
+            <div class="control-section">
+                <div class="control_wrapper accordion-control-section">
+                    <ejs-accordion id="accordion">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="GettingStarted" content="#gettingstarted"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="DataBinding" content="#dataBinding"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Immutable Mode" content="#immutableMode"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Columns" content="#columns"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Row" content="#row"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Cell" content="#cell"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Editing" content="#editing"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Sorting" content="#sorting"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Grouping" content="#grouping"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Filtering" content="#filtering"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Searching" content="#searching"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Paging" content="#paging"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Scrolling" content="#scrolling"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="FrozenRowsandColumns" content="#frozenrowsandcolumns"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Virtualization" content="#virtualization"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="InfiniteScrolling" content="#infinitescrolling"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Selection" content="#selection"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Aggregates" content="#aggregates"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Print" content="#print"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="StatePersistence" content="#statepersistence"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <ul id="gettingstarted" style="display:none">
+                    <li><a href="/GettingStarted/EnablePaging">Enable Paging</a></li>
+                    <li><a href="/GettingStarted/EnableSorting">Enable Sorting</a></li>
+                    <li><a href="/GettingStarted/EnableFiltering">Enable Filtering</a></li>
+                    <li><a href="/GettingStarted/EnableGrouping">Enable Filtering</a></li>
+                </ul>
+                <ul id="dataBinding" style="display:none">
+                    <li><a href="/DataBinding/SendingAdditonalParamtotheServer">Sending Additonal Param to the Server</a></li>
+                    <li><a href="/DataBinding/HandlingHTTPerror">Handling HTTP error</a></li>
+                    <li><a href="/DataBinding/LocalData">Local Data</a></li>
+                    <li><a href="/DataBinding/RemoteData">Remote Data</a></li>
+                    <li><a href="/DataBinding/DataTable">Data Table</a></li>
+                </ul>
+                <ul id="immutableMode" style="display:none"><li><a href="/DataBinding/ImmutableMode">Immutable Mode</a></li></ul>
+                <ul id="columns" style="display:none">
+                    <li><a href="/Columns/AutoGeneratedColumns">Auto Generated Columns</a></li>
+                    <li><a href="/Columns/Headers">Headers</a></li>
+                    <li><a href="/Columns/ColumnTemplate">Column Template</a></li>
+                    <li><a href="/Columns/ComplexDataBinding">Complex Data Binding</a></li>
+                    <li><a href="/Columns/AutofitColumns">AutofitColumns</a></li>
+                    <li><a href="/Columns/AutoGeneratedColumns">Auto Generated Columns</a></li>
+                    <li><a href="/Columns/ColumnReorder">Column Reorder</a></li>
+                    <li><a href="/Columns/ColumnResizing">Column Resizing</a></li>
+                    <li><a href="/Columns/ColumnChooser">Column Chooser</a></li>
+                    <li><a href="/Columns/ColumnMenu">Column Menu</a></li>
+                    <li><a href="/Columns/ColumnSpanning">Column Spanning</a></li>
+                    <li><a href="/Columns/ResponsiveColumns">Responsive Columns</a></li>
+                </ul>
+                <ul id="row" style="display:none">
+                    <li><a href="/Row/RowHeight">Row Height</a></li>
+                    <li><a href="/Row/RowTemplate">Row Template</a></li>
+                    <li><a href="/Row/DetailTemplate">Detail Template</a></li>
+                    <li><a href="/Row/RowDragAndDrop">Row Drag and Drop</a></li>
+                    <li><a href="/Row/RowSpanning">Row Spanning</a></li>
+                </ul>
+                <ul id="cell" style="display:none">
+                    <li><a href="/Cell/DisplayingHTMLContent">Displaying HTML Content</a></li>
+                    <li><a href="/Cell/AutoWrap">Auto Wrap</a></li>
+                    <li><a href="/Cell/ClipMode">ClipMode</a></li>
+                </ul>
+                <ul id="editing" style="display:none">
+                    <li><a href="/Editing/InlineEditing">Inline Editing</a></li>
+                    <li><a href="/Editing/DialogEditing">Dialog Editing</a></li>
+                    <li><a href="/Editing/TemplateEditing">Template Editing</a></li>
+                    <li><a href="/Editing/BatchEditing">Batch Editing</a></li>
+                    <li><a href="/Editing/CommandColumnEditing">Command Column Editing</a></li>
+                    <li><a href="/Editing/Validation">Validation Editing</a></li>
+                    <li><a href="/Editing/PersisitingDatainServer">PersisitingDatainServer</a></li>
+                </ul>
+                <ul id="sorting" style="display:none"><li><a href="/Sorting/Sorting">Sorting</a></li></ul>
+                <ul id="grouping" style="display:none">
+                    <li><a href="/Grouping/CaptionTemplate">Caption Template</a></li>
+                    <li><a href="/Grouping/ReorderingonGroupedColumns">Reordering on Grouped Columns</a></li>
+                    <li><a href="/Grouping/LazyLoadGrouping">Lazy Load Grouping</a></li>
+                </ul>
+                <ul id="filtering" style="display:none">
+                    <li><a href="/Filtering/FilterBar">Filter Bar</a></li>
+                    <li><a href="/Filtering/FilterMenu">Filter Menu</a></li>
+                    <li><a href="/Filtering/ExcelLikeFilter">Excel Like Filter</a></li>
+                </ul>
+                <ul id="searching" style="display:none">
+                    <li><a href="/Searching/Searching">Searching</a></li>
+                </ul>
+                <ul id="paging" style="display:none">
+                    <li><a href="/Paging/Paging">Paging</a></li>
+                </ul>
+                <ul id="scrolling" style="display:none">
+                    <li><a href="/Scrolling/Scrolling">Scrolling</a></li>
+                </ul>
+                <ul id="frozenrowsandcolumns" style="display:none">
+                    <li><a href="/FrozenRowsandColumns/FrozenRowsandColumns">Frozen Rows and Columns</a></li>
+                </ul>
+                <ul id="virtualization" style="display:none">
+                    <li><a href="/Virtualization/Virtualization">Virtualization</a></li>
+                </ul>
+                <ul id="infinitescrolling" style="display:none">
+                    <li><a href="/InfiniteScrolling/InfiniteScrolling">Infinite Scrolling</a></li>
+                </ul>
+                <ul id="selection" style="display:none">
+                    <li><a href="/Selection/RowSelection">Row Selection</a></li>
+                    <li><a href="/Selection/CellSelection">Cell Selection</a></li>
+                    <li><a href="/Selection/ColumnSelection">Column Selection</a></li>
+                    <li><a href="/Selection/CheckboxSelection">Checkbox Selection</a></li>
+
+                </ul>
+                <ul id="aggregates" style="display:none">
+                    <li><a href="/Aggregates/FooterAggregate">Foot Aggregate</a></li>
+                    <li><a href="/Aggregates/GroupandCaptionAggregate">Group and Caption Aggregate</a></li>
+                    <li><a href="/Aggregates/CustomAggregate">Custom Aggregate</a></li>
+                    <li><a href="/Aggregates/ReactiveAggregate">Reactive Aggregate</a></li>
+                </ul>
+                <ul id="print" style="display:none">
+                    <li><a href="/Print/Print">Print</a></li>
+                </ul>
+                <ul id="adaptiveview" style="display:none">
+                    <li><a href="/AdaptiveView/AdaptiveView">Adaptive View</a></li>
+                </ul>
+                <ul id="statepersistence" style="display:none">
+                    <li><a href="/StatePersistence/StatePersistence">State Persistence</a></li>
+                    <li><a href="/StatePersistence/PreventtoPersist">Prevent to Persist</a></li>
+                </ul>
+            </div>
+        </e-content-template>
+    </ejs-sidebar>
+    <div id="body_content" class="maincontent">
+        <div style="padding: 1.5vw 3vw;">
+            @RenderBody()
+        </div>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+    <ejs-scripts></ejs-scripts>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
