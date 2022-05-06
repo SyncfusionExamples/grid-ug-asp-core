@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Column Selection";
+}
+<p>@ViewData["Title"]</p>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSelection="true" allowPaging="true">
+    <e-grid-selectionsettings allowColumnSelection="true" type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="CustomerID" headerText="CustomerID" width="140"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="EmployeeID" width="185" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
